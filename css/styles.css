@@ -80,14 +80,14 @@ a {
     color: #ffff;
     font-weight: 500;
     letter-spacing: 0.64px;
-    background-color: #4D5AE5;
+    background-color: #404BBF;
     cursor: pointer;
 }
 
 .hero_baner_button:hover,
 .hero_baner_button:focus
 {
-    background-color: #424fc0;
+    background-color: #404BBF;
 }
 
 .features_head_title{
