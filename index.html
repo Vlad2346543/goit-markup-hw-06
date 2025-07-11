@@ -567,7 +567,7 @@
             </div>
 
             <div class="form_fieldset_comment">
-              <label  class="form_label" for="user-comment">Comment</label>
+              <label class="form_label" for="user-comment">Comment</label>
                   <textarea class="input_form_textarea" id="user-comment" placeholder="Text input" name="user-comment"></textarea>  
             </div>
           <div class="form_fieldset_checkbox">
@@ -575,9 +575,12 @@
             <input
               type="checkbox"
               id="user-privacy"
-              class="checkbox-input"
+              class="checkbox-input visually-hidden"
+              name="user-privacy"
+              value="true"
               required
             />
+           
             <span class="checkbox-custom">
               <svg width="10" height="8" class="checkbox-icon">
                 <use href="./images/icons.svg#icon-vector"></use>
@@ -587,14 +590,10 @@
                I accept the terms and conditions of the
                <a href="#" class="policy-link">Privacy Policy</a>
            </label>
-              <div class="form_button_container">
-                <button type="submit" class="form_button">Send</button>
-              </div>
-        </div> 
+                <button type="submit" class="form_button">Send</button>            
       </form>
       </div>
-    </div>
-        
+    </div>        
 </body>
 </html>
 
