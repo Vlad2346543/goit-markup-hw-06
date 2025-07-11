@@ -743,7 +743,7 @@ max-width: 100%;
     align-items: center;
     justify-content: center;
     fill: transparent;
-    flex-shrink: 0;
+    
 }
 
 .visually-hidden {
@@ -760,14 +760,18 @@ max-width: 100%;
 
 .checkbox-icon {
   fill: transparent;
-  pointer-events: none;
+  pointer-events:none;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .checkbox-input:checked + .checkbox-custom {
-  background-color: #404bbf; 
-  border: none;
+  background-color:#404bbf; 
+  border:none;
+}
+
+.checkbox-input:checked + .checkbox-custom .checkbox-icon {
+  fill:#F4F4FD; 
 }
 
 .checkbox-input:checked.form_label.checkbox-custom{
@@ -776,9 +780,6 @@ max-width: 100%;
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
-}
-.checkbox-input:checked + .checkbox-custom .checkbox-icon {
-  fill:#f4f4fd; 
 }
 
 .form_button{
