@@ -498,11 +498,39 @@
                   </li>
                 </ul>
               </div>
-             </div>
-           </footer>
-        <div class="overlay_form" >
+               <div class="footer_container_subscribtion">
+                <p class="footer_container_subscribtion_text">Subscribe</p>
+                  <form class="footer_container_subscribtion_form">
+                    <label for="email" class="footer_container_subscribtion_form_label">
+                     <input
+                     id="email"
+                     type="email"
+                     placeholder="E-mail"
+                     name="email"
+                     class="footer_container_subscribtion_form_label_input"
+                     />
+                    </label>
+                    <button
+                    type="submit"
+                    class="footer_container_subscribtion_form_btn"
+                     >Subscribe
+                    <svg
+                    width="24"
+                    height="24"
+                    class="footer_container_subscribtion_form_btn_svg"
+                    >
+                    <use href="./images/icons.svg#icon-send"></use>
+                    </svg>
+                    </button>
+                  </form>
+              </div>
+            </div>
+          </footer>
+
+           <!--Modal-->
+        <div class="open_modal is-open" data-modal>
           <div class="form">
-            <button class="button_form" aria-label="Close modal" data-modal-close>
+            <button type="button" class="button_form" data-modal-close>
               <svg class="close_icon" width="8" height="8">
                 <use href=" ./images/icons.svg#icon-close"></use>
               </svg>
@@ -512,7 +540,7 @@
             <div class="form_fieldset">
               <label class="form_label">Name</label>      
                 <div class="input_container">             
-                  <input class="input_form" type="text" name="Name" >
+                  <input class="input_form" type="text" id="user-name" name="user-name" >
                   <svg class="input_icon" width="18" height="24">
                     <use href="./images/icons.svg#icon-name"></use>
                   </svg>
@@ -521,7 +549,7 @@
             <div class="form_fieldset">
               <label class="form_label">Phone</label>
                 <div class="input_container">
-                  <input class="input_form" type="tel" name="Phone">
+                  <input class="input_form" type="tel" id="user-phone" name="user-phone">
                    <svg class="input_icon" width="18" height="24">
                     <use href="./images/icons.svg#icon-phone"></use>
                   </svg>
@@ -531,35 +559,41 @@
             <div class="form_fieldset">
               <label class="form_label">Email</label>
                 <div class="input_container">
-                  <input class="input_form" type="email" name="Email">
+                  <input class="input_form" type="email" id="user-email" name="user-email">
                   <svg class="input_icon" width="18" height="24">
                     <use href="./images/icons.svg#icon-email"></use>
                   </svg>
                 </div>
             </div>
 
-            <div class="form_fieldset">
+            <div class="form_fieldset_comment">
               <label class="form_label">Comment</label>
-                <div class="input_container">
-                  <textarea class="input_form textarea" placeholder="Text input" name="comment"></textarea>
+                <div for="user-comment" class="input_container">
+                  <textarea class="input_form_textarea" placeholder="Text input" name="comment"></textarea>
                 </div>
             </div>
-             <div class="form_fieldset">
-              <h3 class="privacy_heading"></h3>
-                <label class="privacy_element">
-                  <input type="checkbox" class="checkbox_form" name="checkbox" />
-                    <span class="custom_checkbox"></span>
-                      I accept the terms and conditions of the
-                    <span class="privacy_span">
-                    <a href="" class="privacy">Privacy Policy</a>
-                    </span>
-                  
-                </label>
-             </div>
-              <button type="button" class="form_button">Send</button>
-           </form>
-        </div>
-      </div>
+          <div class="form_fieldset_checkbox">
+           <label for="user-privacy" class="form_label">
+            <input
+              type="checkbox"
+              id="user-privacy"
+              class="checkbox-input"
+              required
+            />
+            <span class="checkbox-custom">
+              <svg width="10" height="8" class="checkbox-icon">
+                <use href="./images/icons.svg#icon-vector"></use>
+              </svg>
+             </span>
+
+               I accept the terms and conditions of the
+               <a href="#" class="policy-link">Privacy Policy</a>
+           </label>
+              <div class="form_button_container">
+                <button type="submit" class="form_button">Send</button>
+              </div>
+        </div> 
+      </form>
 </body>
 </html>
 
