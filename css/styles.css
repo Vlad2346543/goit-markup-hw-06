@@ -771,11 +771,10 @@ fill: transparent;
 .checkbox-input:checked + label .checkbox-custom {
   background-color: #404bbf;
   border: none;
-}
-
-.checkbox-input:checked + label .checkbox-icon {
   fill: #F4F4FD;
 }
+
+
 .checkbox-input:checked.form_label.checkbox-custom{
     background-repeat: no-repeat;
     background-position: center;
