@@ -15,37 +15,111 @@
 </head>
 <body>
         <!--Header-->
-    <header class="header" id="top">
-      <div class="conteiner_header container">
-         <nav class="header_nav">
+ <header class="header" id="top">
+  <div class="container_header container">
+    <nav class="header_nav">
+      <a href="./index.html" class="logo header_logo">
+        Web<span class="logo_studio">Studio</span>
+      </a>
 
-            <a  href="./index.html" class="header_logo">
-            Web<span class="logo_studio" >Studio</span></a>
+      <ul class="header_nav_list">
+        <li class="header_nav_list_item">
+          <a class="nav_list_link current" href="./index.html">Studio</a>
+        </li>
+        <li class="header_nav_list_item">
+          <a class="nav_list_link" href="">Portfolio</a>
+        </li>
+        <li class="header_nav_list_item">
+          <a class="nav_list_link" href="">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <address class="header_address">
+      <ul class="header_address_link">
+        <li class="address_list_item">
+          <a class="address_link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="address_list_item">
+          <a class="address_link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+      </ul>
+    </address>
+    <button type="button" class="burger_btn" data-mobile-open>
+      <svg class="burger_icon" width="24" height="24">
+        <use href="./images/icons.svg#icon-mobile"></use>
+      </svg>
+    </button>
+  </div>  
+</header>
 
-            <ul class="header_nav_list">
-                <li class="header_nav_list_item"><a  class="nav_list_link current" href="./index.html">Studio</a></li>
-                <li class="header_nav_list_item"><a  class="nav_list_link" href="">Portfolio</a></li>
-                <li class="header_nav_list_item"><a  class="nav_list_link" href="">Contacts</a></li>
-            </ul>
-         </nav>    
-
-        <address class="header_address">
-
-            <ul class="header_address_link">         
-                <li class="address_list_item"><a class="address_link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="address_list_item"><a class="address_link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-            </ul>
-
-        </address>
-      </div>
-    </header>
+<div class="mobile_menu" data-mobile>
+  <div class="container mobile_menu_container">
+    <button type="button" class="mobile_menu_close" data-mobile-close>
+      <svg width="8" height="8" class="mobile_menu_close_svg">
+        <use href="./images/icons.svg#icon-close"></use>
+      </svg>
+    </button>
+    <nav class="mobile_menu_nav">
+      <ul class="mobile_menu_nav_list">
+        <li class="mobile_nav_list_item">
+          <a class="mobile_nav_list_item_link accent" href="./index.html">Studio</a>
+        </li>
+        <li class="mobile_nav_list_item">
+          <a class="mobile_nav_list_item_link" href="">Portfolio</a>
+        </li>
+        <li class="mobile_nav_list_item">
+          <a class="mobile_nav_list_item_link" href="">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+    <address class="mobile_menu_address">
+      <ul class="mobile_menu_address_list">
+        <li class="mobile_menu_address_list_item">
+          <a class="mobile_menu_address_list_item_link accent" href="tel:+110001111111">+11 (000) 111-11-11</a>
+        </li>
+        <li class="mobile_menu_address_list_item">
+          <a class="mobile_menu_address_list_item_link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+    </address>
+    <ul class="mobile_menu_list">
+      <li class="mobile_menu_list_item_container_social_item">
+        <a href="" class="mobile_menu_list_item_container_social_item_link">
+          <svg class="mobile_menu_list_item_container_social_item_link_svg" width="24" height="24">
+            <use href="./images/icons.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile_menu_list_item_container_social_item">
+        <a href="" class="mobile_menu_list_item_container_social_item_link">
+          <svg class="mobile_menu_list_item_container_social_item_link_svg" width="24" height="24">
+            <use href="./images/icons.svg#icon-twiter"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile_menu_list_item_container_social_item">
+        <a href="" class="mobile_menu_list_item_container_social_item_link">
+          <svg class="mobile_menu_list_item_container_social_item_link_svg" width="24" height="24">
+            <use href="./images/icons.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="mobile_menu_list_item_container_social_item">
+        <a href="" class="mobile_menu_list_item_container_social_item_link">
+          <svg class="mobile_menu_list_item_container_social_item_link_svg" width="24" height="24">
+            <use href="./images/icons.svg#icon-linkedin"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
 
     <main>
-        
         <section class="hero_baner" id="banner">
          <div class="container">
             <h1 class="hero_baner_title">Effective Solutions for Your Business</h1>
-            <button class="hero_baner_button" type="button">Order Service</button>
+            <button class="hero_baner_button" type="button" data-modal-open>Order Service</button>
          </div>
          </section>
 
@@ -53,7 +127,7 @@
 
         <section class="features" id="info">
          <div class="container">
-            <h2  class="features_head_title">Info</h2>
+            <h2  class="features_head_title section-title">Info</h2>
           <ul  class="features_list">
 
             <li class="features_list_item">
@@ -104,7 +178,7 @@
 
         <section class="team" id="team">
             <div class="container" >
-           <h2 class="team_title">Our Team</h2>
+           <h2 class="team_title section-title">Our Team</h2>
            <ul class="team_list">
             <li class="team_list_item">
             
@@ -334,12 +408,12 @@
 
         <section class="portfolio" id="portfolio">
             <div class="container">
-            <h2 class="portfolio_title">Our Portfolio</h2>
+            <h2 class="portfolio_title section-title">Our Portfolio</h2>
             <ul class="portfolio_list">
 
                 <li class="portfolio_list_item">
                   <div class="overlay">
-                    <img src="./images/App.jpg" alt="Photo" width="360" height="300" class="portfolio_img">
+                    <img src="./images/App.jpg" alt="Photo" width="360" height="300" class="overlay">
                       <p class="overlay_text">
                       14 Stylish and User-Friendly App Design Concepts · Task
                       Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -357,7 +431,7 @@
 
                 <li class="portfolio_list_item">
                   <div class="overlay">
-                 <img src="./images/Cash.jpg" alt="Photo" width="360" height="300" class="portfolio_img">
+                 <img src="./images/Cash.jpg" alt="Photo" width="360" height="300" class="overlay">
                  <p class="overlay_text">
                       14 Stylish and User-Friendly App Design Concepts · Task
                       Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -373,7 +447,7 @@
 
                 <li class="portfolio_list_item">
                   <div class="overlay">
-                  <img src="./images/Med_App.jpg" alt="Photo" width="360" height="300" class="portfolio_img">
+                  <img src="./images/Med_App.jpg" alt="Photo" width="360" height="300" class="overlay">
                   <p class="overlay_text">
                       14 Stylish and User-Friendly App Design Concepts · Task
                       Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -405,7 +479,7 @@
 
                 <li class="portfolio_list_item">  
                   <div class="overlay">     
-                 <img src="./images/Screen.jpg" alt="Photo" width="360" height="300" class="portfolio_img">
+                 <img src="./images/Screen.jpg" alt="Photo" width="360" height="300" class="overlay">
                  <p class="overlay_text">
                       14 Stylish and User-Friendly App Design Concepts · Task
                       Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -421,7 +495,7 @@
 
                 <li class="portfolio_list_item">
                   <div class="overlay">
-                  <img src="./images/Online_Courses.jpg" alt="Photo" width="360" height="300" class="portfolio_img">
+                  <img src="./images/Online_Courses.jpg" alt="Photo" width="360" height="300" class="overlay">
                   <p class="overlay_text">
                       14 Stylish and User-Friendly App Design Concepts · Task
                       Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -528,7 +602,7 @@
           </footer>
 
            <!--Modal-->
-        <div class="open_modal is-open" data-modal>
+        <div class="open_modal" data-modal>
           <div class="form">
             <button type="button" class="button_form" data-modal-close>
               <svg class="close_icon" width="8" height="8">
@@ -572,27 +646,27 @@
             </div>
           <div class="form_fieldset_checkbox">
             <input
-              type="checkbox"
               id="user-privacy"
-              class="checkbox-input visually-hidden"
+              type="checkbox"
               name="user-privacy"
               value="true"
-              required
+              class="visually-hidden checkbox-input"
             />
             <label for="user-privacy" class="form_label">
-              <span class="checkbox-custom">
-                <svg width="10" height="8" class="checkbox-icon">
+              <span class="checkbox_custom">
+                <svg width="10" height="8" class="checkbox_icon">
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a href="#" class="policy-link">Privacy Policy</a>
+              <a href="#" class="policy_link">Privacy Policy</a>
             </label>
           </div>
           <button type="submit" class="form_button">Send</button>
       </form>
       </div>
-    </div>        
+    </div>  
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>      
 </body>
 </html>
-
