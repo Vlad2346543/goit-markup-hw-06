@@ -37,11 +37,12 @@ button{
   --dairy: #fcfcfc;
 }
 
+
 /*common*/
 
 .container {
     width: 320px;
-    padding: 0 16px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -54,7 +55,7 @@ button{
 @media screen and (min-width: 1158px){
     .container {
     width: 1158px;
-    padding: 0 16px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 }
@@ -83,7 +84,7 @@ button{
     line-height: 1.17;
     text-transform: uppercase;
     color:#404bbf; 
-    margin-right: 76px;
+    
     
 }
 
