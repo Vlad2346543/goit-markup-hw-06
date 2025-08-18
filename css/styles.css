@@ -502,8 +502,10 @@ font-style: normal;
   }
 }
 @media screen and (min-width: 1158px) {
-  .hero-banner {
-    padding: 188px 0;
+  .hero_baner {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    margin-bottom: 0;
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
@@ -511,15 +513,19 @@ font-style: normal;
       ),
       url("../images/people-desk-min.jpg");
     max-width: 100%;
+    
   }
 
     .hero_baner_title{
-    margin: 0 auto 48px;
+     max-width: 496px;
     }
 }
 
 @media screen and (min-resolution: 192dpi){
-    .hero-banner {
+    .hero_baner {
+    padding-top: 188px;
+    padding-bottom: 188px;
+    margin-bottom: 0;
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
