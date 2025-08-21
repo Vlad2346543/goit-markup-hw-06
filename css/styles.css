@@ -518,7 +518,6 @@ font-style: normal;
 
     .hero_baner_title{
      margin-bottom: 48px;
-     
     }
 
 
@@ -758,6 +757,7 @@ font-style: normal;
 
 .portfolio {
   padding: 96px 0;
+   
 }
 
 .portfolio_title{
@@ -768,7 +768,7 @@ font-style: normal;
   display: flex;
   flex-wrap: wrap;
   gap: 48px; 
-  justify-content: center
+  justify-content: center;
 }
 
 .portfolio_list_item{
